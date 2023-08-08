@@ -40,7 +40,6 @@ public class AgentServiceImpl implements AgentService {
         agent.setBooking(booking);
         bookingRepo.saveAll(booking);
         transportRepo.saveAll(transport);
-        agentRepo.save(agent);
-        return null;
+        return agentRepo.save(agent);
     }
 }
